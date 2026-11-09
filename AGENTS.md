@@ -30,6 +30,9 @@ git push            # 保持与 origin/main 同步
 
 - Git 可执行文件位于 `F:\Git\cmd\git.exe`
 - 若当前终端提示找不到 `git`，先执行：`$env:Path = "F:\Git\cmd;" + $env:Path`
+- 直连 `github.com:443` 会被阻断，本机代理为 `127.0.0.1:7890`。本仓库已配置
+  `http.proxy` / `https.proxy` 指向该代理；若推送报 `Connection was reset`，
+  先确认代理是否在运行
 
 ## 不要提交的内容
 
